@@ -26,9 +26,18 @@
       </TableView>
       <FlowPane hgap="18.0" layoutX="11.0" layoutY="8.0" prefHeight="44.0" prefWidth="574.0" AnchorPane.leftAnchor="11.0" AnchorPane.rightAnchor="0.0">
          <children>
-            <Button fx:id="btnAddBook" mnemonicParsing="false" onAction="#btnAddBookOnAction" prefHeight="40.0" prefWidth="139.0" text="Add Book">
+            <Button fx:id="btnBack" mnemonicParsing="false" onAction="#btnBackOnAction" prefHeight="32.0" prefWidth="54.0">
                <graphic>
-                  <ImageView fitHeight="18.0" fitWidth="33.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fitHeight="28.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/back_icon.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="btnAddBook" mnemonicParsing="false" onAction="#btnAddBookOnAction" prefHeight="36.0" prefWidth="121.0" text="Add Book">
+               <graphic>
+                  <ImageView fitHeight="15.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@../images/bosok-removebg-preview.png" />
                      </image>
@@ -41,10 +50,10 @@
                   <Cursor fx:constant="HAND" />
                </cursor>
                <font>
-                  <Font name="DejaVu Serif Bold" size="13.0" />
+                  <Font name="DejaVu Serif Bold" size="10.0" />
                </font>
             </Button>
-            <TextField fx:id="txtSearch" prefHeight="26.0" prefWidth="407.0" promptText="Search Books" />
+            <TextField fx:id="txtSearch" prefHeight="26.0" prefWidth="315.0" promptText="Search Books" />
          </children>
       </FlowPane>
    </children>

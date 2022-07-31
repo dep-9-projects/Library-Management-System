@@ -17,6 +17,7 @@ import javafx.scene.input.MouseEvent;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
 import util.Navigation;
+import util.Routes;
 
 import java.io.IOException;
 import java.net.URL;
@@ -27,6 +28,7 @@ public class BooksManagementFormController {
     public TableView<Book> tblBooks;
     public Button btnAddBook;
     public TextField txtSearch;
+    public Button btnBack;
 
     public void initialize(){
 
@@ -54,6 +56,7 @@ public class BooksManagementFormController {
             row.setOnMouseClicked(event -> {
                 if (event.getClickCount() == 2 && (! row.isEmpty()) ) {
                     Book selBook = row.getItem();
+
 
                     try {
                         URL resource = this.getClass().getResource("/view/UpdateBookModalForm.fxml");
@@ -99,4 +102,7 @@ public class BooksManagementFormController {
 
     }
 
+    public void btnBackOnAction(ActionEvent actionEvent) throws IOException {
+        Navigation.navigate(Routes.ADMIN_DASHBOARD);
+    }
 }

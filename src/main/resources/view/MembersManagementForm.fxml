@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="660.0" prefWidth="1094.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MembersManagementFormController">
+   <children>
+      <Label alignment="CENTER" layoutY="17.0" text="Members Management" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <font>
+            <Font name="DejaVu Serif Bold" size="33.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnBack" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#btnBackOnAction" prefHeight="32.0" prefWidth="54.0">
+         <graphic>
+            <ImageView fitHeight="28.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/back_icon.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <TableView fx:id="tblMembers" layoutX="10.0" layoutY="136.60000000000002" prefHeight="486.0" prefWidth="1062.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="140.0">
+        <columns>
+          <TableColumn prefWidth="75.0" text="ID" />
+          <TableColumn prefWidth="264.800048828125" text="NAME" />
+            <TableColumn prefWidth="271.199951171875" text="ADDRESS" />
+            <TableColumn prefWidth="75.0" text="GENDER" />
+        </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+      <FlowPane alignment="CENTER" hgap="50.0" layoutY="66.0" prefHeight="46.0" prefWidth="1095.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <Button fx:id="btnAddMember" mnemonicParsing="false" onAction="#btnAddMemberOnAction" prefHeight="44.0" prefWidth="171.0" text="Add Member+">
+               <graphic>
+                  <ImageView fitHeight="28.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/userIcon-removebg-preview.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font name="DejaVu Serif Bold" size="13.0" />
+               </font>
+            </Button>
+            <TextField fx:id="txtSearchMember" prefHeight="39.0" prefWidth="736.0" promptText="Search Member" />
+         </children>
+         <padding>
+            <Insets bottom="7.0" right="4.0" top="3.0" />
+         </padding>
+      </FlowPane>
+   </children>
+</AnchorPane>

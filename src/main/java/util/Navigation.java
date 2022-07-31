@@ -41,6 +41,26 @@ public class Navigation {
                 window.setTitle("Library Management System");
                 break;
 
+            case BOOK_ISSUE:
+                resource =Navigation.class.getResource("/view/BookIssueForm.fxml");
+                window.setTitle("Library Management System-Issue Book");
+                break;
+
+            case BOOK_RETURN:
+                resource = Navigation.class.getResource("/view/BookReturnForm.fxml");
+                window.setTitle("Library Management System-Return Book");
+                break;
+
+            case MEMBER_MANAGEMENT:
+                resource = Navigation.class.getResource("/view/MembersManagementForm.fxml");
+                window.setTitle("Library Management System-Members Management");
+                break;
+
+            default:
+                resource = Navigation.class.getResource("/view/AdminSettingsForm.fxml");
+                window.setTitle("Library Management System-Settings");
+                break;
+
 
 
 
