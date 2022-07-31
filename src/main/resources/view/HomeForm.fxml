@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="720.0" prefWidth="1080.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.HomeFormController">
+   <children>
+      <AnchorPane fx:id="imgHome" layoutX="32.0" layoutY="15.0" onMouseClicked="#imgHomeOnMouseClicked">
+         <children>
+            <ImageView fitHeight="60.0" fitWidth="104.0" layoutX="-10.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/Home.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="pneContainer" layoutX="13.0" layoutY="87.0" prefHeight="604.0" prefWidth="1056.0" style="-fx-background-color: #f0f0f0;" AnchorPane.bottomAnchor="25.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="80.0" />
+      <Label layoutX="358.0" layoutY="17.0" prefHeight="66.0" prefWidth="414.0" text="Library Management System" textFill="#812626">
+         <font>
+            <Font name="DejaVu Serif Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="433.0" layoutY="697.0" text="Licens@dep9.ijse. All rights reserved" AnchorPane.bottomAnchor="4.0" />
+   </children>
+</AnchorPane>

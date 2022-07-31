@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="226.0" prefWidth="436.0" style="-fx-background-color: #7FDAE3;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.SplashScreenFormController">
+   <children>
+      <ImageView fitHeight="234.0" fitWidth="416.0" layoutX="-2.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/splashimg2.png" />
+         </image>
+      </ImageView>
+      <Label alignment="CENTER" layoutX="1.0" layoutY="168.0" text="Library Management System" textFill="#9c0202" AnchorPane.leftAnchor="1.0" AnchorPane.rightAnchor="-1.0">
+         <font>
+            <Font name="Lohit Gujarati" size="29.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblLoading" layoutX="189.0" layoutY="168.0" text="Loading" textFill="#ff1f1f" />
+      <Rectangle fx:id="rctContainer" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="7.0" layoutX="3.0" layoutY="229.0" stroke="BLACK" strokeType="INSIDE" width="430.0" />
+      <Rectangle fx:id="rctStatus" arcHeight="5.0" arcWidth="5.0" fill="#238e27" height="7.0" layoutX="3.0" layoutY="229.0" stroke="BLACK" strokeType="INSIDE" width="50.0" />
+   </children>
+</AnchorPane>

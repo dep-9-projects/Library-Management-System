@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.BooksManagementFormController">
+   <children>
+      <TableView fx:id="tblBooks" layoutX="9.0" layoutY="57.0" prefHeight="338.0" prefWidth="585.0" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="9.0" AnchorPane.rightAnchor="6.0" AnchorPane.topAnchor="57.0">
+        <columns>
+          <TableColumn prefWidth="115.2000732421875" text="ISBN" />
+          <TableColumn prefWidth="124.0" text="NAME" />
+            <TableColumn minWidth="0.0" prefWidth="191.99993896484375" text="AUTHOR" />
+            <TableColumn minWidth="0.0" prefWidth="91.20001220703125" text="QTY" />
+        </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+      <FlowPane hgap="18.0" layoutX="11.0" layoutY="8.0" prefHeight="44.0" prefWidth="574.0" AnchorPane.leftAnchor="11.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <Button fx:id="btnAddBook" mnemonicParsing="false" onAction="#btnAddBookOnAction" prefHeight="40.0" prefWidth="139.0" text="Add Book">
+               <graphic>
+                  <ImageView fitHeight="18.0" fitWidth="33.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/bosok-removebg-preview.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+               </graphic>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="DejaVu Serif Bold" size="13.0" />
+               </font>
+            </Button>
+            <TextField fx:id="txtSearch" prefHeight="26.0" prefWidth="407.0" promptText="Search Books" />
+         </children>
+      </FlowPane>
+   </children>
+</AnchorPane>
